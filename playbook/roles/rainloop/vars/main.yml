@@ -1,0 +1,4 @@
+---
+rainloop_packages:
+  - name: php56-ldap
+  - name: rainloop-community

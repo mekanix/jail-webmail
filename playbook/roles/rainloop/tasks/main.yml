@@ -1,0 +1,20 @@
+---
+- name: install packages
+  with_items: "{{ rainloop_packages }}"
+  pkgng:
+    name: "{{ item.name }}"
+  notify:
+    - restart php-fpm
+
+- name: set data dir perms
+  file:
+    path: /usr/local/www/rainloop/data
+    mode: 0775
+    group: www
+
+- name: enable php-fpm
+  template:
+    src: php_fpm.j2
+    dest: /etc/rc.conf.d/php_fpm
+  notify:
+    - restart php-fpm
