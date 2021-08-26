@@ -25,7 +25,7 @@ go to `Domains`, remove existing domains and add `<domain>` as:
 From `Packages` on the left install `Change password (LDAP)` then go to plugins and enable `ldap-change-password`. Click on the plugin and enter the following:
 * hostname: ldaps://ldap.\<domain>
 * port: 636
-* user DN format: uid={email:user},ou={email:domain},dc=ldap
+* user DN format: uid={email:user},ou={email:domain},dc=account,dc=ldap
 * password field: userPassword
 * encryption type: SHA
 * alloed emails: *
