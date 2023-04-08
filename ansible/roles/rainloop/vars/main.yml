@@ -1,4 +1,4 @@
 ---
 rainloop_packages:
   - name: "{{ php_prefix }}-ldap"
-  - name: "rainloop-community-{{ php_prefix }}"
+  - name: "rainloop-{{ php_prefix }}"
