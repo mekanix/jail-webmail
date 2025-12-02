@@ -1,6 +1,6 @@
 ---
 - name: install packages
-  with_items: "{{ rainloop_packages }}"
+  with_items: "{{ snappy_packages }}"
   pkgng:
     name: "{{ item.name }}"
   notify:
@@ -8,7 +8,7 @@
 
 - name: set data dir perms
   file:
-    path: /usr/local/www/rainloop/data
+    path: /usr/local/www/snappymail/data
     mode: 0775
     group: www
 

@@ -4,7 +4,8 @@ ansible/group_vars/all
 ansible/inventory/inventory
 ansible/site.yml
 ansible/roles/onelove-roles.freebsd-common/
-ansible/roles/onelove-roles.freebsd-consul-template/
+ansible/roles/onelove-roles.freebsd_php/
+ansible/roles/onelove-roles.freebsd_repo/
 build/
 cbsd.conf
 project.mk

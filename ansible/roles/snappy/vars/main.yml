@@ -1,0 +1,4 @@
+---
+snappy_packages:
+  - name: "{{ php_prefix }}-ldap"
+  - name: "snappymail-{{ php_prefix }}"
